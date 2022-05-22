@@ -45,12 +45,12 @@ jobs:
           # an dieser Stelle wird die Aufgabe 3 bearbeitet: heroku login, docker build, docker push
         heroku container:login
         mvn package
-        docker build --tag registry.heroku.com/${pet-clinic-heroku}/web -f Dockerfile .
-        docker push registry.heroku.com/${pet-clinic-heroku}/web
+        docker build --tag registry.heroku.com/pet-clinic-heroku/web -f Dockerfile .
+        docker push registry.heroku.com/pet-clinic-heroku/web
         
     - name: Release
       run: |
         #### AUFGABE 4 DEPLOYMENT AUF HEROKU
           # hier wird die 4. Aufgabe bearbeitet: Release der App auf Heroku
-        heroku stack:set container --app ${pet-clinic-heroku}
-        heroku container:release web --app ${pet-clinic-heroku}
+        heroku stack:set container --app pet-clinic-heroku
+        heroku container:release web --app pet-clinic-heroku
