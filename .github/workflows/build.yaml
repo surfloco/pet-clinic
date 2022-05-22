@@ -5,7 +5,7 @@ env:
   # Tip: Die Token/der API-Key werden als Secrets in den Repository-Settings eingetragen und hier referenziert.
   APP_NAME: "" #<-- hier wird der Name euer Heroku-App eingetragen
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }} 
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+  GITHUB_TOKEN: ${{ secrets.GH_TOKEN_PETCLINIC }} 
   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 jobs:
   compile:
