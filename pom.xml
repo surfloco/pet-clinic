@@ -17,7 +17,7 @@
   <properties>
 
     
-    <sonar.organization>bettercodepaul</sonar.organization>
+    <sonar.organization>surfloco</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
     <!-- Generic properties -->
